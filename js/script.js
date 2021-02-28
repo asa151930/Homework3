@@ -23,51 +23,28 @@ function generatePassword() {
   var confirmLowerCase = confirm("Click OK to confirm including lowercase charaters");
   var confirmUpperCase = confirm("Click OK to confirm including uppercase charaters");
 
-  while (!
-    confirmSpecial && confirmNumbers && confirmLowerCase && confirmUpperCase) {
+  // Validation alert to make sure user atleast chooses one character type
+  while (confirmSpecial == false && confirmNumbers === false && confirmLowerCase === false && confirmUpperCase === false) {
     alert("You must have one selected character, Try again");
 
-    var confirmSpecial = confirm("Click OK to confirm including special charaters");
-    var confirmNumbers = confirm("Click OK to confirm including numeric charaters");
-    var confirmLowerCase = confirm("Click OK to confirm including lowercase charaters");
-    var confirmUpperCase = confirm("Click OK to confirm including uppercase charaters");
+    confirmSpecial = confirm("Click OK to confirm including special charaters");
+    confirmNumbers = confirm("Click OK to confirm including numeric charaters");
+    confirmLowerCase = confirm("Click OK to confirm including lowercase charaters");
+    confirmUpperCase = confirm("Click OK to confirm including uppercase charaters");
   }
-
-
-
-
-
-
-
-
-
-
 
 }
 
-
-
-
-
-
+function Options ()
+{
+  specialArr = confirmSpecial
+}
 
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   passwordText.value = password;
