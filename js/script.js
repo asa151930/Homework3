@@ -12,6 +12,7 @@ var upperCaseArr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
 // confirmation prompts
 function generatePassword() {
   var confirmLength = window.prompt("How many characters would you like your password to contain? ");
+   
 
   while (confirmLength < 8 || confirmLength > 128) {
     alert("Password must be between 8-128 characters. Try again! ");
