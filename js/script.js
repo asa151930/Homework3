@@ -18,27 +18,33 @@ function generatePassword() {
     var confirmLength = window.prompt("How many characters would you like your password to contain? ");
   }
 
-  var confirmSpecial = confirm("Click OK to confirm including special charaters");
-  var confirmNumbers = confirm("Click OK to confirm including numeric charaters");
-  var confirmLowerCase = confirm("Click OK to confirm including lowercase charaters");
-  var confirmUpperCase = confirm("Click OK to confirm including uppercase charaters");
+  var confirmSpecialArr = confirm("Click OK to confirm including special charaters");
+  var confirmNumbersArr = confirm("Click OK to confirm including numeric charaters");
+  var confirmLowerCaseArr = confirm("Click OK to confirm including lowercase charaters");
+  var confirmUpperCaseArr = confirm("Click OK to confirm including uppercase charaters");
 
   // Validation alert to make sure user atleast chooses one character type
-  while (confirmSpecial == false && confirmNumbers === false && confirmLowerCase === false && confirmUpperCase === false) {
+  while (confirmSpecialArr === false && confirmNumbersArr === false && confirmLowerCaseArr === false && confirmUpperCaseArr === false) {
     alert("You must have one selected character, Try again");
 
-    confirmSpecial = confirm("Click OK to confirm including special charaters");
-    confirmNumbers = confirm("Click OK to confirm including numeric charaters");
-    confirmLowerCase = confirm("Click OK to confirm including lowercase charaters");
-    confirmUpperCase = confirm("Click OK to confirm including uppercase charaters");
+     confirmSpecialArr = confirm("Click OK to confirm including special charaters");
+     confirmNumbersArr = confirm("Click OK to confirm including numeric charaters");
+     confirmLowerCaseArr = confirm("Click OK to confirm including lowercase charaters");
+     confirmUpperCaseArr = confirm("Click OK to confirm including uppercase charaters");
   }
 
+  
+
 }
 
-function Options ()
+const randomFunction =
 {
-  specialArr = confirmSpecial
-}
+  symbol: specialArr,
+  number: numbersArr,
+  lower: lowerCaseArr,
+  upper: upperCaseArr
+
+};
 
 
 // Write password to the #password input
