@@ -32,9 +32,6 @@ function generatePassword() {
      confirmLowerCaseArr = confirm("Click OK to confirm including lowercase charaters");
      confirmUpperCaseArr = confirm("Click OK to confirm including uppercase charaters");
   }
-
-  
-
 }
 
 const randomFunction =

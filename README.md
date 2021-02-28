@@ -1,5 +1,4 @@
-# Homework3
-# Password Generator 
+# Homework3 - 03 JavaScript: Password Generator
 
 User Story
 
@@ -25,3 +24,11 @@ WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
+
+# References
+
+W3-SCHOOLS
+https://www.w3schools.com/js/default.asp
+
+MDN WEB DOCS
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
